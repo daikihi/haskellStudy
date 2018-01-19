@@ -4,7 +4,6 @@ data IntLinkeListEle = IntLinkeListEle{
     next :: Maybe IntLinkeListEle
 } deriving Show
 
-addEle list num index findIndex =  IntLinkeListEle num list :: IntLinkeListEle
 
 getNext :: IntLinkeListEle -> Maybe IntLinkeListEle
 getNext list = next list :: Maybe IntLinkeListEle
