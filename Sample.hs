@@ -4,6 +4,8 @@ data IntLinkeListEle = IntLinkeListEle{
     next :: Maybe IntLinkeListEle
 } deriving Show
 
+addHead :: Maybe IntLinkeListEle -> Int -> IntLinkeListEle
+addHead list num = IntLinkeListEle num list
 
 getNext :: IntLinkeListEle -> Maybe IntLinkeListEle
 getNext list = next list :: Maybe IntLinkeListEle
@@ -16,6 +18,6 @@ getTail list =
 
 main :: IO ()
 main = do
-    let iiList = IntLinkeListEle
-    print 123
-    
+    let iiList = addHead Nothing 100
+    print $ iiList
+    print 123 
