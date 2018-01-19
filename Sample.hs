@@ -4,6 +4,7 @@ data IntLinkeListEle = IntLinkeListEle{
     next :: Maybe IntLinkeListEle
 } deriving Show
 
+-- add new element
 addHead :: Maybe IntLinkeListEle -> Int -> IntLinkeListEle
 addHead list num = IntLinkeListEle num list
 
@@ -22,4 +23,7 @@ main = do
     let iiList1 = addHead (Just iiList) 200
     print "##############"
     print $ iiList1
+    print $ getNext iiList1
+    print $ getTail iiList1
+    print $ getTail iiList
     print "@@@@@@@@@@@@@@"
