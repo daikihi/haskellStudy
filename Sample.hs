@@ -19,5 +19,7 @@ getTail list =
 main :: IO ()
 main = do
     let iiList = addHead Nothing 100
-    print $ iiList
-    print 123 
+    let iiList1 = addHead (Just iiList) 200
+    print "##############"
+    print $ iiList1
+    print "@@@@@@@@@@@@@@"
