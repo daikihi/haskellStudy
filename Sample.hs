@@ -6,11 +6,9 @@ data IntLinkeListEle = IntLinkeListEle{
 } deriving Show
 
 -- addEle :: IntLinkeListEle -> Int -> IntLinkeListEle
-addEle list num = do 
-    let res = IntLinkeListEle num list
-    return res
+addEle list num =  IntLinkeListEle num list :: IntLinkeListEle
 
-    main :: IO ()
+main :: IO ()
 main = do
     let iiList = IntLinkeListEle
     print 123
