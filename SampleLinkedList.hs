@@ -8,9 +8,11 @@ data IntLinkeListEle = IntLinkeListEle{
 addHead :: Maybe IntLinkeListEle -> Int -> IntLinkeListEle
 addHead list num = IntLinkeListEle num list
 
+-- get next element
 getNext :: IntLinkeListEle -> Maybe IntLinkeListEle
 getNext list = next list :: Maybe IntLinkeListEle
 
+-- find last element
 getTail :: IntLinkeListEle  -> IntLinkeListEle 
 getTail list = 
     case getNext list of
